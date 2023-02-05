@@ -1,7 +1,6 @@
 # Exchange Library
 ## Provides an inexpensive platform for people to find out about new books and exchange.
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
@@ -10,10 +9,6 @@ This android app will make the process of trading books easy and get introduce t
 Books are available at no cost for readers with the click of exchange.
 The purpose of the application is to bind all the book readers with a common purpose.
 The reason behind building the application is that there are very few options available in the market for users looking to trade books based on status, review and ratings.
-
-- Type some Markdown on the left
-- See HTML in the right
-- ✨Magic ✨
 
 ## Features
 
