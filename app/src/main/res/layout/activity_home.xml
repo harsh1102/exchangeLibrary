@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawerlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeActivity"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationview"
+        app:headerLayout="@layout/headerfile"
+        app:menu="@menu/sidemenu"
+        android:layout_gravity="start" />
+    <RelativeLayout
+        android:id="@+id/searchinfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listview"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="150px" />
+    </RelativeLayout>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF7518"
+        app:title="Home"
+        app:titleTextColor="#FFFFFF"
+        app:titleMarginStart="10dp"
+        android:layout_marginBottom="0dp"
+        app:theme="@style/ToolbarColoredBackArrow"
+        tools:ignore="MissingConstraints"/>
+
+    <RelativeLayout
+        android:id="@+id/feedview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:background="@color/gray">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/post_feeds_list"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:dividerHeight="16dp"
+            android:divider="@android:color/transparent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/ic_chat"
+            android:id="@+id/chatBtn"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:fabSize="normal" />
+    </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

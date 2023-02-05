@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:layout_alignBottom="@id/toolbar">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp">
+
+        <LinearLayout
+            android:id="@+id/profile_container"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/profilePic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="1dp"
+                android:src="@drawable/profile_img">
+            </ImageView>
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:text="Test User"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/title_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_container"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Title: "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                ></TextView>
+            <TextView
+                android:id="@id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Letting Go"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/author_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/title_container">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Author: "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                ></TextView>
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Philip Roth"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                ></TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/book_img"
+            android:layout_below="@+id/author_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/book"
+            android:layout_marginTop="10dp">
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/summary_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/book_img"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Summary: "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                ></TextView>
+            <TextView
+                android:id="@+id/summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Letting Go by Philip Roth is a book my father handed me. Only one novel a year, on average, was read by Dad. He read hundreds of scholarly non-fiction books each year because he studied politics."
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/genre_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/summary_container">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Genre: "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                ></TextView>
+            <TextView
+                android:id="@+id/genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Fictional"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/review_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/genre_container">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Review: "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                ></TextView>
+            <TextView
+                android:id="@+id/review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Good"
+                android:textColor="@color/black"
+                android:textSize="16sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rating_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/review_container">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Rating: "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                ></TextView>
+            <TextView
+                android:id="@+id/rating"
+                android:layout_below="@+id/review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="4/5"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/status_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/rating_container">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Status: "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                ></TextView>
+            <TextView
+                android:id="@+id/status"
+                android:layout_below="@+id/rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="In hand"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/location_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/status_container">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Location: "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                ></TextView>
+            <TextView
+                android:id="@+id/location"
+                android:layout_below="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Texas"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                ></TextView>
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_container"
+            android:numStars="5"
+            android:rating="3.5"
+            android:theme="@style/RatingBar"/>
+
+        <Button
+            android:id="@+id/btnGet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingBar"
+            android:layout_alignLeft="@+id/ratingBar"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="-54dp"
+            android:text="Rate"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimaryDark" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
